@@ -1,0 +1,13 @@
+{
+	"name":"nodeircchat",
+	"version":"0.0.0",
+	"author":"emars",
+	"description":"nodejs irc webclient",
+	"dependencies":{
+		"express":"latest",
+		"jade":"latest",
+		"socket.io":"latest",
+		"irc":"latest"
+	},
+	"author":"dazappa"
+}

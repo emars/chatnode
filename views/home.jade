@@ -1,0 +1,31 @@
+doctype html
+html
+ head
+  title='node irc'
+  link(rel="stylesheet" href="css/bootstrap.min.css")
+  link(rel="stylesheet" href="css/main.css")
+  script(src="js/jquery.js")
+  script(src="js/socket.io.js")
+  script(src="js/main.js")
+ body
+  div(class="green-decal")
+  div(class="text-center container")
+   p='chat node'
+   div(class="row")
+   div(class="col-lg-3")
+    pre(class="node-box" id="users" style="height:600px;overflow-y:overlay;")="not connected"
+   div(class="col-lg-9")
+    pre(class="node-box text-left" id="chatbot" style="height:600px;overflow-y:overlay;")
+     code(id="connecting")="not connected"
+   div(class="row")
+   div(class="col-lg-3")
+   div(class="send-tools col-lg-9")
+    input(id="textbox" disabled placeholder="disconected..." class="input-send col-lg-9")
+    button(id="send" disabled class="btn btn-node-green col-lg-2")="send"
+   div(class="row")
+   div(class="col-lg-3")
+   button(id="disconnect" disabled class="btn btn-node-white")="disconnect"
+   input(id="nick" class="text-center" placeholder="nickname")
+   input(id="server" class="text-center" placeholder="server ardress")
+   input(id="channel" class="text-center" placeholder="channel")
+   button(id="connectbtn" class="btn btn-node-white")="connect"
